@@ -15,6 +15,24 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/Inishmore', (req, res) => {
+  res.render('Inishmore.hbs', {
+    pageTitle: 'Inishmore'
+  });
+});
+
+app.get('/Inishmaan', (req, res) => {
+  res.render('Inishmaan.hbs', {
+    pageTitle: 'Inishmaan'
+  });
+});
+
+app.get('/Inisheer', (req, res) => {
+  res.render('Inisheer.hbs', {
+    pageTitle: 'Inisheer'
+  });
+});
+
 app.listen(3000, () => {
   console.log("Server up and running")
 });
